@@ -37,6 +37,9 @@ article = medium.article(article_id)
 # Define output paths
 markdown_output_path = f"../file_output/markdown/{formatted_title}.md"
 
+# Ensure directory exists or create it
+os.makedirs(os.path.dirname(markdown_output_path), exist_ok=True)
+
 # Save the Markdown output
 with open(markdown_output_path, 'w', encoding='utf-8') as f:
     f.write(article.markdown)
