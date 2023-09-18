@@ -38,6 +38,9 @@ article = medium.article(article_id)
 # Define output paths
 html_output_path = f"../file_output/html/{formatted_title}.html"
 
+# Ensure directory exists or create it
+os.makedirs(os.path.dirname(html_output_path), exist_ok=True)
+
 # Convert Markdown to HTML
 html_output = markdown.markdown(article.markdown)
 html_output = html_output.replace('’', "'")
