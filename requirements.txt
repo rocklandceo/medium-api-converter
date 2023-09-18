@@ -1,5 +1,5 @@
 markdown
 medium-api
 beautifulsoup4
-dotenv
+python-dotenv
 requests
