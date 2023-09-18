@@ -1,0 +1,9 @@
+pytest
+tox
+sphinxcontrib-napoleon
+markdown
+medium-api
+beautifulsoup4
+dotenv
+argparse
+requests

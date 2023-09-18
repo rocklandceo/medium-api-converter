@@ -1,0 +1,5 @@
+markdown
+medium-api
+beautifulsoup4
+dotenv
+requests
